@@ -324,7 +324,6 @@ footer {
     font-size: 2em;
     font-weight: 300;
     margin: 0 0 30px 0;
-
     &:after {
         position: absolute;
         content: '';
@@ -573,11 +572,11 @@ footer {
 
 /*
     -------------------------------
-    ----- 7. Education Styles -----
+    ----- 7. Promotional Materials Styles -----
     -------------------------------
 */
 
-#education {
+#promo {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
@@ -627,15 +626,14 @@ footer {
 
 /*
     -------------------------------
-    ----- 8. Project Styles -----
+    ----- 8. Presentations Styles -----
     -------------------------------
 */
 
-#projects {
+#presentations {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -686,6 +684,69 @@ footer {
 }
 
 #more-projects {
+    display: none;
+}
+
+/*
+    -------------------------------
+    ----- 8bis. Science Writing Styles -----
+    -------------------------------
+*/
+
+#sciencewriting {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.project-image {
+    float: left;
+}
+
+.project-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
+
+.no-image {
+    .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        transform: none;
+    }
+}
+
+#more-sciencewriting {
     display: none;
 }
 
