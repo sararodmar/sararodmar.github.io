@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="galleria/galleria-1.5.7.min.js"></script>
+		<style>
+		    .galleria{ max-width: 600px; height: 800px; background: #000; margin: 0 auto; }
+		</style>
 </head>
 
 <body>
@@ -36,7 +41,7 @@
             <li>
                 <a href="#presentations">Presentations & Projects</a>
             </li>
-        
+
             <li>
                 <a href="#contact">Contact</a>
             </li>
@@ -80,7 +85,7 @@
     </div>
     <!-- End #about -->
 
-    <div id="sciencewriting" class="background-alt">    
+    <div id="sciencewriting" class="background-alt">
         <h2 class="heading">Science Writing</h2>
         <div class="container">
             <div class="row">
@@ -92,7 +97,7 @@
                     <div class="project-info">
                         <h3>On X-Rays and Radioactivity</h3>
                         <p>
-                            Science communication paper on the history and philosophy behind the discovery of radioactivity, and how this change of paradigm affected the field of Phyiscs. Based on the readings of Hellman (1998) and many more. 
+                            Science communication paper on the history and philosophy behind the discovery of radioactivity, and how this change of paradigm affected the field of Phyiscs. Based on the readings of Hellman (1998) and many more.
                         </p>
                         <a href="./files/radioactivity.pdf" target="_blank">View Document</a>
                     </div>
@@ -115,7 +120,7 @@
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-                
+
                    <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/project.jpg" />
@@ -139,7 +144,7 @@
                     <div class="project-info">
                         <h3>Science: The concepts that withstood the test of time</h3>
                         <p>
-                            What forms science? Can we find patterns, cycles in its progress? These are some of the questions that I explore in this essay. 
+                            What forms science? Can we find patterns, cycles in its progress? These are some of the questions that I explore in this essay.
                         </p>
                         <a href="#">View Document</a>
                     </div>
@@ -150,48 +155,32 @@
         </div>
     </div>
     <!-- End #projects -->
-        
+
     <div id="promo">
             <h2 class="heading">Promotional Materials</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
+						<div class="galleria">
+							<img src="images/lead-bg.jpg">
+							<img src="images/project.jpg">
+							<img src="images/holiday.png">
+						</div>
+						<script>
+						(function() {
+    					Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    					Galleria.run('.galleria');
+						}());
+						</script>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
     <div id="presentations" class="background-alt">
         <h2 class="heading">Presentations & Projects</h2>
-  
-        <div id="experience-timeline">
+          <div id="experience-timeline">
             <div data-date="November 2018">
                 <h3>On Radio and Television</h3>
                 <h4>Presentation at University at Buffalo</h4>
                 <p>
-                    Our current means of communication have evolved immensely in the past centuries. Through this slideshow, I presented my research on the evolution of radio and television until today's means of communication (social media and more) and analyzed how these evolutions have shaped human interactions. 
+                    Our current means of communication have evolved immensely in the past centuries. Through this slideshow, I presented my research on the evolution of radio and television until today's means of communication (social media and more) and analyzed how these evolutions have shaped human interactions.
                 </p>
             </div>
 
@@ -269,7 +258,6 @@
     </footer>
     <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
