@@ -35,26 +35,33 @@
     <style>
         .galleria{ max-width: 600px; height: 800px; background: #000; margin: 0 auto; }
         .dropdown {
-          display: block;
+          display: inline-block;
           float: center;
           overflow: hidden;
         }
 
         .dropdown .droplnk {
-          cursor: pointer;
-          font-size: inherit;  
-          border: none;
-          outline: none;
-          color: inherit;
-          padding: 16px auto;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
+            display: block;
+            color: $text;
+            padding: 10px;
+            &:hover {
+                color: $text;
+                text-decoration: underline;
+                background: #FFFFFF;
+                border-radius: 6px;
+            }
+
+            &:focus {
+                color: $text;
+                text-decoration: none;
+            }
+    
         }
 
         .dropdown-content {
           display: none;
           position: absolute;
+          float: center;
           background-color: inherit;
           min-width: 160px;
           z-index: 1;
