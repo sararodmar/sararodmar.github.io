@@ -34,11 +34,6 @@
 
     <style>
         .galleria{ max-width: 600px; height: 800px; background: #000; margin: 0 auto; }
-        .dropdown {
-          display: inline-block;
-          float: center;
-          overflow: hidden;
-        }
 
         .dropdown .droplnk {
             display: block;
@@ -109,13 +104,11 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
-            <li>
-                <div class="dropdown">
-                    <a onclick="dropDown()" class="droplnk">Resumes</a>
-                    <div id="resumesDropdwn" class="dropdown-content">
-                        <a href="Resumes/Sara_Rodriguez_resume_EN.pdf" target="_blank">English</a>
-                        <a href="Resumes/Sara_Rodriguez_resume_DE.pdf" target="_blank">Deutsch</a>
-                    </div>
+            <li class="dropdown">
+                <a onclick="dropDown()" class="droplnk">Resumes</a>
+                <div id="resumesDropdwn" class="dropdown-content">
+                    <a href="Resumes/Sara_Rodriguez_resume_EN.pdf" target="_blank">English</a>
+                    <a href="Resumes/Sara_Rodriguez_resume_DE.pdf" target="_blank">Deutsch</a>
                 </div>
             </li>
         </ul>
